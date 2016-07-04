@@ -1,1 +1,1 @@
-web: gunicorn joinmefordinner:app --log-file=-
+web: python joinmefordinner.py -p 33507
