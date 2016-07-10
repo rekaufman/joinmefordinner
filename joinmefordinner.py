@@ -11,13 +11,13 @@ class FakeDatabase(object):
         post_2 = ("Brownies", "Bake them!")
         post_3 = ("Pretzels", "Boil them!")
         post_4 = ("French fries", "Fry them!")
-        posts = [post_1, post_2, post_3, post_4]
+        post_5 = ("Mushroom soup", "Simmer it")
+        posts = [post_1, post_2, post_3, post_4, post_5]
         return choice(posts)
 
 @app.route("/")
 def hello():
-    a = range(100)
-    return "<b/> Join me for dinner! %s </b>" % a  
+    return "<b/> Join me for dinner! </b>"
     
 @app.route("/random")
 def random_selection():
