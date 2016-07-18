@@ -33,7 +33,10 @@ def random_selection():
         headline_color, blog_post[0], blog_post[1])
 
 
-
+@app.route("/blog")
+def blog():
+    return "<b/> Here are my recipes! </b>"
+    
 if __name__ == "__main__":
     app.run(port=33507)
 
