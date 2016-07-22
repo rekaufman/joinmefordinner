@@ -14,6 +14,7 @@ class FakeDatabase(object):
         post_5 = ("Mushroom soup", "Simmer it")
         post_6 = ("Tiramisu", "Prepare it!")
         posts = [post_1, post_2, post_3, post_4, post_5, post_6]
+        posts = [(tup[0].upper(), tup[1].lower()) for tup in posts]
         return choice(posts)
 
 @app.route("/")
