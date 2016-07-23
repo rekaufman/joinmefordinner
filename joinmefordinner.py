@@ -37,7 +37,11 @@ def random_selection():
 @app.route("/blog")
 def blog():
     return "<b/> Here are my recipes! </b>"
-    
+
+@app.route("/shadow")
+def shadow():
+    return "<h1>Shadow!</h1><p><img src=\"https://raw.githubusercontent.com/rekaufman/joinmefordinner/master/shadow.jpg\" /></p>"
+
 if __name__ == "__main__":
     app.run(port=33507)
 
